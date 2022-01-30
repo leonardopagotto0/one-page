@@ -1,0 +1,203 @@
+@media only screen and (max-width: 1298px) {
+    .container_form{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 963px) {
+
+    .contact{
+        width: 100%;
+        background-color: rgb(0, 53, 114);
+        margin: 0;
+    }
+    .container_form{
+        width: 100%;
+        padding: 30px 10px 30px 10px;
+    }
+    .grup_form_contact{
+        display: block;
+        padding: 0;
+    }
+    .options_contact{
+        width: 100%;
+        display: none;
+    }
+    .form_contact{
+        width: 100%;
+        border-radius: 0;
+        border-radius: 0px 0px 7px 7px;
+    }
+    .options-contact-mobile-part01{
+        display: block;
+        background-color: rgb(28, 164, 255);
+        border-radius: 10px 10px 0px 0px;
+        padding: 17px;
+    }
+    .title_options_contact{
+        
+        margin-bottom: 7px;
+        margin-top: 0;
+    }
+    .sub_title_options{
+        margin-bottom: 5px;
+    }
+    .last_element{
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .container{
+        width: 100%;
+        display: block;
+    }
+    .about_conteudo{
+        display: block;
+        padding: 10px;
+    }
+    .colum_img_about{
+        display: none;
+    }
+    .colum-img-about-mobile{
+        display: block;
+        
+    }
+    .container-mobile{
+        width: 100%;
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+    }
+    .background_img_about{
+        
+    }
+    .colum_desc_about{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .background_desc_about{
+        margin-top: 10px;
+        padding: 0;
+    }
+
+
+
+    .services{
+        width: 100%;
+        padding: 10px;
+    }
+    .container-services{
+        width: 100%;
+    }
+
+    .services_conteudos{
+        display: block;
+        
+    }
+    .card_service01{
+        
+    }
+    .card_service02{
+        padding-top: 0;
+    }
+    .card_service03{
+        padding-top: 0;
+    }
+    .btn_grup_services{
+        display: none;
+    }
+    .btn_grup_services-mobile{
+        display: block;
+        padding: 10px;
+        background-color: rgb(28, 164, 255);
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 13pt;
+        transition: background-color 400ms;
+    }
+    .btn_grup_services-mobile:hover{
+        background-color: rgb(25, 134, 206);
+    }
+    .desc_about{
+        text-align: center;
+    }
+
+
+    .title{
+        margin-top: 100px;
+    }
+    .btns_home_action{
+        display: none;   
+    }
+    .btns_home_action-mobile{
+        display: block;
+        margin-top: 70px;
+    }
+    .btn-mobile-config01{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .btn-mobile-config02{
+        text-align: center;
+
+    }
+    .btn_grup_home{
+        margin: 0;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 1414px){
+    .div_nav{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 605px){
+    .div_nav{
+        
+        display: none;
+    }
+    .moblile-nav{
+        display: block;
+        width: 100%;
+        padding-top: 0px;
+        background-color: rgba(10, 10, 10, 0.795);
+        border-radius: 0px 0px 20px 20px;
+    }
+    .img-menu-mobile{
+        width: 50px;
+        margin-right: 20px;
+    }
+    .li-nav-mobile{
+        list-style-type: none;
+        text-decoration: none;
+    }
+    nav{
+        padding: 5px;
+    }
+    .a-nav-mobile{
+        margin-top: 17px;
+        margin-left: 17px;
+        color: white;
+        text-decoration: none;
+        font-size: 13pt;
+    }
+
+
+
+    .header_nav{
+        height: 850px;
+    }
+    .title{
+        padding: 10px;
+    }
+}
+
