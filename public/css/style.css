@@ -12,51 +12,37 @@
         background-color: #F5FAFD;
     }
 
-/* Header NavBar */
-    .div_nav{
-        margin-left: 24%;
-        margin-right: 25%;
-        padding-top: 23px;
-        background-color: rgba(10, 10, 10, 0.795);
-        border-radius: 0px 0px 20px 20px;
-    }
+/* Navbar */
     nav{
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        /*background-color: rgba(168, 168, 168, 0.301); */
-        border-radius: 5px;
+        justify-content: center;
+        position: fixed;
     }
-    .routers{
+    nav span{
+        font-size: 12pt;
+    }
+    .note{
+        width: 100%;
+        padding: 30px;
         display: flex;
+        justify-content: space-around;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(224, 161, 161);
     }
-    .logo-nav{
-        width: 70px;
-        border-radius: 50px;
-        margin: 2px;
-        margin-left: 20px;
-        margin-right: 100px;
-    }
-    .li_nav{
-        list-style-type: none;
-        text-decoration: none;
-        padding-bottom: 20px;
-    }
-    .a_nav ,.a_nav_api{
-        text-decoration: none;
-        color: white;
-        padding: 20px;
-        font-size: 13pt;
-    }
-    .a_nav_api{
-        text-decoration: underline;
+    .note .opts span{
+        margin-right: 40px;
     }
 
 /* Header home page */
     .header_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: linear-gradient(rgba(0, 0, 0, 0.041),rgba(0, 0, 0, 0.452)),url(../img/img-header.png) fixed #444 left top;
         width: 100%;
-        height: 765px;
-        position: relative;
+        height: 800px;
         border-bottom: 5px;
         border-bottom-style: solid;
         border-color: rgb(224, 161, 161);
@@ -69,7 +55,6 @@
     .title{
         color: white;
         text-align: center;
-        margin-top: 200px;
     }
 
 /* btns_home_action */
@@ -109,17 +94,18 @@
 
 /* about me */
     .services{
-        position: relative;
-        margin-top: -100px;
-    }
-
-/* limite de margin */
-    .container-services {
-        position: relative;
-        width: 960px;
-        margin: 0 auto;
-        padding: 0;
+        background-color: #F5FAFD;
+        padding-bottom: 20px;
         display: flex;
+        justify-content: center;
+    }
+    
+    /* limite de margin */
+    .container-services {
+        margin-top: -100px;
+        width: 960px;
+        padding: 0;
+        /* display: flex; */
     }
 
 /* container services conteudos */
@@ -138,7 +124,6 @@
     }
     .card_service01{
         background-color: white;
-        position: relative;
         width: 100%;
         padding: 50px;
         border-right: 1px;
@@ -147,7 +132,6 @@
     }
     .card_service02{
         background-color: white;
-        position: relative;
         width: 100%;
         padding: 50px;
         border-right: 1px;
@@ -156,7 +140,6 @@
     }
     .card_service03{
         background-color: white;
-        position: relative;
         width: 100%;
         padding: 50px;
         border-right: 1px;
@@ -209,7 +192,6 @@
 ******** 3 parte (Quem sou) ********
 ***********************************/
     .about{
-        margin-top: 20px;
         padding-top: 100px;
         padding-bottom: 150px;
         background-color: white;
@@ -221,7 +203,6 @@
     }
 
     .container{
-        position: relative;
         width: 960px;
         margin: 0 auto;
         padding: 0;
@@ -235,7 +216,6 @@
 
     /* colum_img_about */
         .colum_img_about{
-            position: relative;
             margin-left: -50px;
             margin-top: 10px;
         }
@@ -288,12 +268,12 @@
 ******** 4 parte (Contato) ********
 ***********************************/
     .contact{
-        margin-top: 50px;
-        margin-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        background-color: #F5FAFD;
     }
         /* container_form */
             .container_form{
-                position: relative;
                 width: 1280px;
                 margin: 0 auto;
                 padding: 0;
@@ -311,27 +291,62 @@
                 padding: 20px;
                 background-color: rgb(28, 164, 255);
                 border-radius: 10px 0px 0px 10px;
-                
+            }
+            .options_contact img{
+                width: 40px;
+            }
+            .options_contact .opts{
+                display: flex;
+                align-items: center;
+                color: white;
+                margin-bottom: 20px;
+            }
+            .options_contact .opts span{
+                margin-left: 15px;
+            }
+            .location{
+                width: 100%;
+                margin-top: 80px;
+            }
+            .location .btns{
+                display: flex;
+                border-radius: 10px 10px 0px 0px;
+                overflow-x: hidden;
+            }
+            .location button{
+                width: 100%;
+                border: none;
+                padding: 10px;
+                background-color: white;
+                cursor: pointer;
             }
             .form_contact{
+                background-color: white;
                 width: 70%;
                 padding: 20px;
-                background-color: white;
                 border-radius: 0px 10px 10px 0px;
             }
         /* Config form elemests */
+            .form_contact span{
+                color: #616161;
+            }
             .input_contact{
                 width: 100%;
-                padding: 5px;
+                padding: 10px;
                 border: none;
-                border: solid;
-                border-color: rgb(0, 0, 0);
-                border-width: 1px;
+                border: solid 1px rgb(172, 170, 170);
                 margin-bottom: 50px;
-                border-radius: 10px;
+                margin-top: 3px;
+                border-radius: 5px;
+                font-size: 11pt;
+                color: #5c5c5c;
+            }
+            .input_contact:focus{
+                outline: none;
+                border: solid 1px rgb(18, 123, 194);
             }
             .btn_submit_form{
-                width: 100px;
+                width: 200px;
                 padding: 10px;
                 box-sizing: initial;
                 font-size: 13pt;
@@ -339,12 +354,14 @@
                 border: none;
                 background-color: rgb(28, 164, 255);
                 color: white;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                transition: background-color 500ms;
             }
             .btn_submit_form:hover{
-                
-            }
-            .submit_form_contact{
-                text-align: center;
+                background-color: rgb(60, 127, 172);
+                cursor: pointer;
             }
         /* Config options contact */
             .grup_icons_options{
@@ -390,10 +407,10 @@
 ******5 parte (last_element) *******
 **********************************
 */
-    .last_element{
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+    footer{
         width: 100%;
-        padding: 30px;
+        padding: 50px;
+        box-shadow: 1px 1px 7px rgba(124, 124, 124, 0.26);
         background-color: rgb(255, 255, 255);
     }
         /* logo last bar */
