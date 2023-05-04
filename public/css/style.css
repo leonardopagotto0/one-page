@@ -1,11 +1,16 @@
-/* All */
-    /*dqwfqwgf*/
-    *{
-        padding: 0;
-        margin: 0%;
-        font-family: Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-    }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+*{
+    padding: 0;
+    margin: 0%;
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background-color: rgba(28, 164, 255, 0.397);
+    /* text-shadow: 1px 1px rgb(33, 96, 138); */
+}
 
 /* Page */
     .page{
@@ -17,12 +22,19 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        position: fixed;
+        position: absolute;
     }
     nav span{
         font-size: 12pt;
+        cursor: pointer;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;
     }
-    .note{
+    .note-style-one{
         width: 100%;
         padding: 30px;
         display: flex;
@@ -31,12 +43,26 @@
         color: rgb(0, 0, 0);
         border-bottom: 3px solid rgb(224, 161, 161);
     }
-    .note .opts span{
+    .note-style-two{
+        width: 70%;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(114, 175, 216);
+        color: rgb(0, 0, 0);
+        /* border: 3px solid rgb(224, 161, 161); */
+        border-top: none;
+        border-radius: 0px 0px 10px 10px;
+        color: rgb(255, 255, 255);
+    }
+    nav .opts span{
         margin-right: 40px;
+        cursor: pointer;
+        text-transform: lowercase;
     }
 
 /* Header home page */
-    .header_nav{
+    header{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -111,46 +137,48 @@
 /* container services conteudos */
     .services_conteudos{
         display: flex;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+        box-shadow: 1px 1px 7px rgba(124, 124, 124, 0.26);
     }
-    .img_area_service{
+    .card-service{
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-right: 1px;
+        border-right-style: solid;
+        border-color: rgb(221, 221, 221);
         text-align: center;
     }
-    .img_service{
+    .card-service img{
         width: 50px;
     }
-    .desc_area_service{
+    .card-service a{
+        padding: 10px;
+        background-color: rgb(28, 164, 255);
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 13pt;
+        transition: background-color 400ms;
+        margin-top: 30px;
+    }
+    .card-service span{
+        color: rgb(70, 112, 127);
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+    .card-service .title-s{
+        margin: 30px;
         text-align: center;
-    }
-    .card_service01{
-        background-color: white;
-        width: 100%;
-        padding: 50px;
-        border-right: 1px;
-        border-right-style: solid;
-        border-color: rgb(221, 221, 221);
-    }
-    .card_service02{
-        background-color: white;
-        width: 100%;
-        padding: 50px;
-        border-right: 1px;
-        border-right-style: solid;
-        border-color: rgb(221, 221, 221);
-    }
-    .card_service03{
-        background-color: white;
-        width: 100%;
-        padding: 50px;
-        border-right: 1px;
-        border-right-style: solid;
-        border-color: rgb(221, 221, 221);
+        font-size: 20pt;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
     }
     /* Btn services (agendar uma consulta)  */
-        .input_div_services{
-            margin-top: 50px;
-            text-align: center;
-        }
         .input_grup_services{
             padding: 10px;
             box-sizing: initial;
@@ -160,27 +188,11 @@
             background-color: rgb(28, 164, 255);
             color: white;
         }
-        .btn_grup_services{
-            padding: 10px;
-            background-color: rgb(28, 164, 255);
-            border-radius: 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 13pt;
-            transition: background-color 400ms;
-        }
         .btn_grup_services:hover{
             background-color: rgb(25, 134, 206);
         }
 
 /* title desc of services conteudos */
-    .tile_area_service{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .title_service{
-        text-align: center;
-    }
     .desc_service{
         color: rgb(70, 112, 127);
         font-family: "Open Sans";
@@ -201,7 +213,13 @@
         margin-bottom: 40px;
         font-family: monospace;
     }
-
+    .social-midias{
+        margin-top: 10px;
+    }
+    .social-midias img {
+        width: 25px;
+        /* margin-right: 10px; */
+    }
     .container{
         width: 960px;
         margin: 0 auto;
@@ -216,7 +234,7 @@
 
     /* colum_img_about */
         .colum_img_about{
-            margin-left: -50px;
+            margin-left: -5px;
             margin-top: 10px;
         }
         .background_img_about{
@@ -236,7 +254,6 @@
         .colum_desc_about{
             width: 100%;
             height: 350px;
-            box-shadow: 1px 1px 10px rgba(97, 97, 97, 0.438);
             border-radius: 10px;
         }
         .background_desc_about{
@@ -246,11 +263,6 @@
             background-color: rgb(255, 255, 255);
             border-radius: 5px;
             
-        }
-        .title_about{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            color: black;
         }
         .sub_title_about{
             text-align: center;
@@ -334,12 +346,13 @@
                 width: 100%;
                 padding: 10px;
                 border: none;
-                border: solid 1px rgb(172, 170, 170);
+                border: solid 1px rgb(201, 201, 201);
                 margin-bottom: 50px;
                 margin-top: 3px;
                 border-radius: 5px;
                 font-size: 11pt;
                 color: #5c5c5c;
+                resize: none;
             }
             .input_contact:focus{
                 outline: none;
@@ -354,7 +367,7 @@
                 border: none;
                 background-color: rgb(28, 164, 255);
                 color: white;
-                margin: 0 auto;
+                /* margin: 0 auto; */
                 display: flex;
                 justify-content: center;
                 transition: background-color 500ms;
@@ -403,67 +416,92 @@
                 color: white;
             }
 
+
 /***********************************
-******5 parte (last_element) *******
-**********************************
-*/
-    footer{
-        width: 100%;
-        padding: 50px;
-        box-shadow: 1px 1px 7px rgba(124, 124, 124, 0.26);
-        background-color: rgb(255, 255, 255);
-    }
-        /* logo last bar */
-            .logo_div_last_bar{
-                text-align: center;
-            }
-            .logo_last_bar{
-                width: 90px;
-                border-radius: 50px;
-            }
-        /* Title last bar */
-            .desc_last_bar{
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            .title_last_bar{
-                color: rgb(59, 59, 59);
-                font-family: 'Quicksand-VariableFont'; 
-            }
-            .sub_title_last_bar{
-                color: rgb(0, 0, 0);
-                font-size: 14pt;
-                font-family: monospace;
-            }
-        /* Tags style */
-            .div_tags{
-                text-align: center;
-                text-decoration: none;
-            }
-            .tag{
-                color: rgb(121, 121, 121);
-            }
-        /* font instace */
-        @font-face {
-            src: url(../fonts/Quicksand-VariableFont_wght.ttf);
-            font-family: 'Quicksand-VariableFont';    
-            font-weight: normal;
-        } 
+************ 5 parte (blog) *******
+***********************************/
+.blog{
+    padding: 50px 5% 0 5%;
+}
+.blog > span{
+    text-align: center;
+    font: inherit;
+    font-size: 20pt;
+    color: #555;
+    margin: 5px 0px 20px 0px;
+}
+.blog .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+.card{
+    width: 290px;
+    height: 400px;
+    background-color: #ffffff;
+    margin: 30px;
+    transition: box-shadow 500ms;
+}
+.card:hover{
+    box-shadow: 1px 1px 7px rgba(124, 124, 124, 0.26);
+    cursor: pointer;
+}
+.card .content{
+    padding: 40px 20px 40px 20px;
+    display: grid;
+}
+.card .image{
+    width: 100%;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card span{
+    color: #444;
+}
+.card-title{
+    margin-top: 15px;
+    padding: 0px;
+}
 
 
+/***********************************
+******6 parte (last_element) *******
+***********************************/
+footer{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 7px rgba(124, 124, 124, 0.26);
+    background-color: rgb(255, 255, 255);
+}
+footer span{
+    font-size: 14pt;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: normal;
+}
 
-        .options-contact-mobile-part01{
-            display: none;
-        }
-        .colum-img-about-mobile{
-            display: none;
-        }
-        .btn_grup_services-mobile{
-            display: none;
-        }
-        .btns_home_action-mobile{
-            display: none;
-        }
-        .moblile-nav{
-            display: none;
-        }
+
+@font-face {
+    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+    font-family: 'Quicksand-VariableFont';    
+    font-weight: normal;
+} 
+.options-contact-mobile-part01{
+    display: none;
+}
+.colum-img-about-mobile{
+    display: none;
+}
+.btn_grup_services-mobile{
+    display: none;
+}
+.btns_home_action-mobile{
+    display: none;
+}
+.moblile-nav{
+    display: none;
+}

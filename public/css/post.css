@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+*{
+    padding: 0;
+    margin: 0%;
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background-color: rgba(28, 164, 255, 0.397);
+}
+button {
+    cursor: pointer;
+}
+.input-text{
+    position: fixed;
+    background-color: rgb(82, 81, 81);
+    color: white;
+    border: none;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.input-text:focus{
+    outline: none;
+}
+.opts-element{
+    position: fixed;
+    width: 100px;
+    /* padding: 10px; */
+}
+
+
+/***********************************
+************* navbar ***************
+***********************************/
+nav{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: initial;
+    color: white;
+}
+
+nav a{
+    margin-left: 50px;
+    line-height: 10px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+nav span:hover{
+    color: rgb(60, 126, 150);
+}
+
+nav img{
+    width: 30px;
+}
+
+/***********************************
+************* Header ***************
+***********************************/
+header{
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid rgba(30, 76, 92, 0.5);
+}
+header .content{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+header  img{
+    cursor: pointer;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .subtitle span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+.div_subtitle{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+header .title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+header .content .subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/***********************************
+*********** liner editor **********
+***********************************/
+.liner-editor{
+    width: min-content;
+    display: flex;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(70, 112, 127, 0.562);
+    background-color: rgb(255, 255, 255);
+}
+
+.liner-editor button{
+    width: 50px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.liner-editor > img{
+    width: 25px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+.liner-editor select{
+    color: rgb(70, 112, 127);
+    border: solid 1px rgba(70, 112, 127, 0.562);
+    border-radius: 3px;
+    margin-right: 6px;
+}
+
+
+/***********************************
+*********** blog content ***********
+***********************************/
+.container{
+    width: 100%;
+    display: flex;
+    padding: 120px 30px 120px 30px;
+    justify-content: center;
+    font-size: 15pt;
+    color: rgb(70, 112, 127);
+}
+.nav-social{
+    padding-right: 10px;
+}
+.nav-social img{
+    width: 25px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.post-content{
+    max-width: 800px;
+}
+
+.post-content span{
+    display: block;
+    padding-bottom: 20px;
+    text-align: justify;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.post-content .title{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.post-content a {
+    color: rgb(70, 112, 127);
+    text-decoration: underline 1px;
+    transition: color 0.3s ease-in-out;
+}
+.post-content a:hover{
+    color: rgba(28, 164, 255, 0.397);
+}
+
+.post-content .list{
+    display: list-item;
+    list-style: square;
+    margin-left: 30px;
+}
+
+.post-content .image{
+    width: 100%;
+    height: 400px; 
+    object-fit: contain;
+    margin-bottom: 40px;
+}
+
+.post-content .quote{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    border-left: solid 5px rgb(70, 112, 127);
+    margin-bottom: 40px;
+}
+
+.goback{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.goback span {
+    margin-left: 50px;
+    color: rgb(70, 112, 127);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/***********************************
+*********** roda pé ****************
+***********************************/
+footer{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 7px rgba(124, 124, 124, 0.26);
+    background-color: rgb(255, 255, 255);
+}
+footer span{
+    font-size: 14pt;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: normal;
+}

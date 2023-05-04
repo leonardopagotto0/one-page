@@ -1,5 +1,10 @@
+async function navbar (elementId)
+{
+    const element = document.getElementById(elementId);
+    element.scrollIntoView({behavior: "smooth", block: "center"});
+}
 
-async function setMap(element, opts)
+ async function setMap(element, opts)
 {
     const mapElement = document.getElementById('map');
     const btns = element.parentElement.children;
@@ -21,4 +26,3 @@ async function setMap(element, opts)
         if(l == opts) mapElement.src = locations[l];
     });
 }
-
