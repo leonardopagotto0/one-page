@@ -8,18 +8,10 @@ async function requestPost()
 
     console.log(id);
 
-    const response = await fetch(`https://leonardopagotto0.github.io/blog-one-page/${id}.json`, {
-        method: "GET",
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            "Content-Type": "application/json",
-            'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
-        },
-    });
+    const response = await fetch(`https://blog.simonecalabrezi.live/${id}.json`);
 
     if(!response.ok){
-        alert("Erro ao carregar postagem!");
-        return;
+        win
     }
 
     const data = await response.json();
