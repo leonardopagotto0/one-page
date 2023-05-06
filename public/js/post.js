@@ -11,8 +11,9 @@ async function requestPost()
     const response = await fetch(`https://blog.simonecalabrezi.live/${id}.json`, {
         method: "GET",
         headers: {
-            'Access-Control-Allow-Origin': 'blog.simonecalabrezi.live',
+            'Access-Control-Allow-Origin': '*',
             "Content-Type": "application/json",
+            'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
         },
     });
 
