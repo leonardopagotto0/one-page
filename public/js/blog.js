@@ -9,7 +9,7 @@ async function getPosts() {
         const postIds = await postIdRequest.json();
 
         postIds.forEach(async (id) => {
-            const postPath = `https://blog.simonecalabrezi.live/${id}.json`;
+            const postPath = `https://blog.simonecalabrezi.live/${id}`;
 
             try {
                 const postRequest = await fetch(postPath);
