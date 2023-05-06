@@ -11,7 +11,8 @@ async function requestPost()
     const response = await fetch(`https://blog.simonecalabrezi.live/${id}.json`);
 
     if(!response.ok){
-        win
+        window.location.assign("/#blog");
+        return;
     }
 
     const data = await response.json();

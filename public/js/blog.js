@@ -5,11 +5,11 @@ async function getPosts() {
     async function takeBasicInfo()
     {
 
-        const postIdRequest = await fetch("/posts/ids.json");
+        const postIdRequest = await fetch("https://blog.simonecalabrezi.live/ids.json");
         const postIds = await postIdRequest.json();
 
         postIds.forEach(async (id) => {
-            const postPath = `/posts/${id}.json`;
+            const postPath = `https://blog.simonecalabrezi.live/${id}.json`;
 
             try {
                 const postRequest = await fetch(postPath);
@@ -19,7 +19,7 @@ async function getPosts() {
             } catch (err) {
                 console.log("Invalid JSON file: ", err);
             }
-        })
+        });
     }
 
     async function createPostCard(id, date, title)
