@@ -8,7 +8,7 @@ async function requestPost()
 
     console.log(id);
 
-    const response = await fetch(`https://blog.simonecalabrezi.live/${id}.json`, {
+    const response = await fetch(`https://leonardopagotto0.github.io/blog-one-page/${id}.json`, {
         method: "GET",
         headers: {
             'Access-Control-Allow-Origin': '*',
