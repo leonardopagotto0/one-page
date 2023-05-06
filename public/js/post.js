@@ -4,12 +4,15 @@ async function requestPost()
 {
 
     const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.get('id');
+    const id = urlParams.get('id');
 
-    const response = await fetch(`/posts/${postId}.json`, {
+    console.log(id);
+
+    const response = await fetch(`http://blog.simonecalabrezi.live/${id}.json`, {
         method: "GET",
         headers: {
-            "Content-Type": "application/json"
+            'Access-Control-Allow-Origin': 'blog.simonecalabrezi.live',
+            "Content-Type": "application/json",
         },
     });
 
