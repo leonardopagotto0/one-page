@@ -6,8 +6,6 @@ async function requestPost()
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
 
-    console.log(id);
-
     const response = await fetch(`https://blog.simonecalabrezi.live/${id}.json`);
 
     if(!response.ok){
