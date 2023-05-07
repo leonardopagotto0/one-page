@@ -18,8 +18,13 @@ async function requestPost()
 
     for (let index = 0; index < fields.length; index++) {
         const field = fields[index];
-
         const element = document.getElementById(field);
+        
+        if(field == "header") {
+            element.style.backgroundImage = data[field];
+            continue;
+        }
+        
         element.innerHTML = data[field];
     }
 }

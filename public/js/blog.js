@@ -15,22 +15,26 @@ async function getPosts() {
                 const postRequest = await fetch(postPath);
                 const post = await postRequest.json();
 
-                createPostCard(id, post.date, post.title);
+                createPostCard(id, post.date, post.title, post.header);
+                return;
             } catch (err) {
                 console.log("Invalid JSON file: ", err);
             }
         });
     }
 
-    async function createPostCard(id, date, title)
+    async function createPostCard(id, date, title, image)
     {
+
+        if(!image || !id || !date || !title) return;
+
         // Criando elementos
         const card = document.createElement("div");
         card.classList.add("card");
 
         const image = document.createElement("div");
         image.classList.add("image");
-        image.style.backgroundImage = `url(/posts/images/${id}.jpg)`;
+        image.style.backgroundImage = image;
 
         const content = document.createElement("div");
         content.classList.add("content");
@@ -48,6 +52,10 @@ async function getPosts() {
 
         card.appendChild(image);
         card.appendChild(content);
+        card.addEventListener('click', () => {
+            window.location.assign(`/blog/post?id=${id}`);
+        });
+
 
         // Adicionando card ao content
         const contentElement = document.getElementById("blog-content");
