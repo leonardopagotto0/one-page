@@ -23,10 +23,10 @@ async function getPosts() {
         });
     }
 
-    async function createPostCard(id, date, title, image)
+    async function createPostCard(id, date, title, img)
     {
 
-        if(!image || !id || !date || !title) return;
+        if(!img || !id || !date || !title) return;
 
         // Criando elementos
         const card = document.createElement("div");
@@ -34,7 +34,7 @@ async function getPosts() {
 
         const image = document.createElement("div");
         image.classList.add("image");
-        image.style.backgroundImage = image;
+        image.style.backgroundImage = img;
 
         const content = document.createElement("div");
         content.classList.add("content");
