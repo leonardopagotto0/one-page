@@ -34,26 +34,17 @@
         -ms-user-select: none;        /* IE10+ */
         user-select: none;
     }
-    .note-style-one{
-        width: 100%;
-        padding: 30px;
-        display: flex;
-        justify-content: space-around;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        border-bottom: 3px solid rgb(224, 161, 161);
-    }
     .note-style-two{
         width: 70%;
         padding: 30px;
         display: flex;
         justify-content: space-between;
-        background-color: rgb(114, 175, 216);
+        background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
-        /* border: 3px solid rgb(224, 161, 161); */
         border-top: none;
         border-radius: 0px 0px 10px 10px;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     }
     nav .opts span{
         margin-right: 40px;

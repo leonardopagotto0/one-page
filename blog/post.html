@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/post.css">
+    <link rel="stylesheet" href="/public/css/elements.css">
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <div class="note-style-two">
+            <span onclick="redirectUser('/')">Simone Calabrezi</span>
+            <div class="opts">
+                <span onclick="redirectUser('/#services')">Serviços</span>
+                <span onclick="redirectUser('/#about')">Sobre</span>
+                <span onclick="redirectUser('/#contact')">Contato</span>
+                <span onclick="redirectUser('/#blog')">Blog</span>
+            </div>
+        </div>
+    </nav>
     <header id="header" style="background-image: url('/public/img/post_header_example.jpg');">
         <div class="content">
-            <nav>
-                <a href="/">simone calabrezi</a>
-                <div>
-                    <a href="/">Home</a>
-                    <a href="/#blog">Blog</a>
-                    <a href="/#about">Sobre</a>
-                    <a href="/#contact">Contato</a>
-                    <a href="/indicacao">Simone indica</a>
-                </div>
-            </nav>
             <div class="container">
                 <span class="edt title" id="title">Como lidar com alguém com personalidade narcisista?</span>
                 <div class="subtitle" id="subtitle">
@@ -53,5 +55,9 @@
         <span>Neuropsicopedagoga</span>
     </footer>
     <script src="/public/js/post.js"></script>
+    <script src="/public/js/component/notice.js"></script>
+    <script>
+        notice();
+    </script>
 </body>
 </html>
