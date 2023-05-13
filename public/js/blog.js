@@ -15,7 +15,7 @@ async function getPosts() {
                 const postRequest = await fetch(postPath);
                 const post = await postRequest.json();
 
-                createPostCard(id, post.date, post.title, post.header);
+                createPostCard(id, post.date, post.title, post.image);
                 return;
             } catch (err) {
                 console.log("Invalid JSON file: ", err);
@@ -34,7 +34,7 @@ async function getPosts() {
 
         const image = document.createElement("div");
         image.classList.add("image");
-        image.style.backgroundImage = img;
+        image.style.backgroundImage = `url(${img})`;
 
         const content = document.createElement("div");
         content.classList.add("content");
